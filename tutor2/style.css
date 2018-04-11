@@ -1,0 +1,21 @@
+.mycolor {
+    color:red;
+}
+.my-div{
+    background-color: blue;
+}
+
+.inner-div {
+border: 20px dashed red;
+padding: 10px;
+margin: 10px;
+}
+
+.box-responsive{
+    max-width: width 100%;
+    background-color: black;
+}
+
+.my-ul{
+    list-style-type: square;
+}
