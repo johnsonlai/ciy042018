@@ -47,26 +47,22 @@ function doPush(){
 
         function doShift(){
             numbers.shift();
-            items = numbers;
             renderList();
               }
     
       function doUnShift(){
         var firstnum = numbers[0] - 1; 
         numbers.unshift(firstnum);
-        items = numbers;
         renderList();
     }
 
     function doSplice(){
         var slicenum = 4.5; 
         numbers.splice(3,1,slicenum);
-        items = numbers;
         renderList();
 }
     function doSort() {
         numbers.sort(function(a, b){return b-a});
-        items = numbers;
         renderList();
     }
 function renderList(){
