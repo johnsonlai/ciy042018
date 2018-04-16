@@ -33,9 +33,15 @@ var numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
 
 function doPush(){
     var size = numbers.length;
-    var lastnum = numbers[numbers.length-1];
-    numbers.push(lastnum + 1);
-    items = numbers;
+    if (numbers[0]<numbers[1]){
+        var lastnum = numbers[numbers.length-1];
+        numbers.push(lastnum + 1);
+    }
+    else {
+        var lastnum = numbers[numbers.length-1];
+        numbers.push(lastnum - 1);
+    }
+ 
     renderList();
       }
 
@@ -71,6 +77,7 @@ function renderList(){
         result = result + `<div class="item item${value}" id='item${value}'>${value}</div>`;
     });
     document.getElementById('items').innerHTML = result;
+    
 }
 
 renderList();
